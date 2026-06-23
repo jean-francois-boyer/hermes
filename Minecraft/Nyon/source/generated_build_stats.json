@@ -1,0 +1,21 @@
+{
+  "bbox": [
+    46.3672638,
+    6.2276363,
+    46.3922896,
+    6.2645758
+  ],
+  "world_size_blocks": [
+    2837,
+    2786
+  ],
+  "buildings": 1018,
+  "roads": 820,
+  "water_areas": 14,
+  "total_commands": 998931,
+  "parts": 111,
+  "scale": "1 block = 1 metre",
+  "source": "OpenStreetMap ODbL",
+  "relief": true,
+  "elevation_range_m": 60.0
+}

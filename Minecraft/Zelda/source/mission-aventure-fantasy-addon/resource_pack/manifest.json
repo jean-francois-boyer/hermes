@@ -1,0 +1,30 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "Pack généré par l’agent Minecraft Bedrock local",
+    "name": "Mission Aventure Fantasy - Resource Pack",
+    "uuid": "79fb8989-87b9-4623-b3cd-3e008eb65450",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      20,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "Module resource pack",
+      "type": "resources",
+      "uuid": "931ec17c-e6de-4cb2-b580-29190e8e345d",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}
