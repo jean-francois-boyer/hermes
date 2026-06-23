@@ -1,0 +1,6 @@
+scenario,hypothese,impact_attendu,decision
+Retard spiral +10 jours,date réception spiral repoussée de 10 jours,OF avec spiral manquant glisse; promesse client à risque,avancer OF complets + relance fournisseur + informer commercial
+Réception bracelet 50%,seulement 50% de la quantité attendue est reçue,finalisation partielle du lot sport,allouer aux clients prioritaires
+Capacité atelier -20%,absence horloger senior ou poste indisponible,CTP dégradé malgré ATP composants,"réduire lancements, prioriser OF VIP/complets"
+Commande VIP urgente,OF VIP passe en priorité critique,réallocation composants rares possible,arbitrage direction sur OF repoussés
+Lot cadrans rejeté qualité,stock cadran passe en bloqué qualité/rejeté,"NO-GO qualité, replanification",plan d’action qualité + nouvelle date supply

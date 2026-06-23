@@ -1,0 +1,4 @@
+composant,reference,fournisseur,quantite,date_reception,date_confirmee,fiabilite,impact
+spiral,MH-SQUELETTE-40-OR,Fournisseur Spiral SA,4,2026-07-09,False,moyenne,OF-2607-002 reste NO-GO tant que réception non confirmée et non libérée qualité
+bracelet,MH-SPORT-41-NOIR,Bracelets Luxe SA,8,2026-07-11,True,haute,OF-2607-003 lançable partiel; finalisation après réception
+cadran,MH-HERITAGE-36-ACIER,Interne cadrans,10,2026-07-07,True,haute,Réception physique faite mais libération qualité requise

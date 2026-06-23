@@ -1,0 +1,40 @@
+section,famille,composant,nom_en,role,variantes_materiaux_types
+habillage,Composants externes (la boîte),lunette,bezel,"Anneau supérieur maintenant la glace, fixe ou tournant","fixe, tournante unidirectionnelle, tournante bidirectionnelle"
+habillage,Composants externes (la boîte),glace,crystal,Verre de protection du cadran,"saphir, minéral, acrylique (hesalite)"
+habillage,Composants externes (la boîte),carrure,case / middle case,Corps central de la boîte qui loge le mouvement,
+habillage,Composants externes (la boîte),fond_de_boite,case back,Ferme la boîte côté poignet,"plein, transparent (saphir), vissé, clipsé"
+habillage,Composants externes (la boîte),joints_etancheite,gaskets / seals,Assurent l'étanchéité,"carrure, fond, couronne, glace"
+habillage,Composants externes (la boîte),couronne,crown,Remontage et mise à l'heure (liée à la tige de remontoir),
+habillage,Composants externes (la boîte),cornes,lugs,Anses de fixation du bracelet à la carrure,
+habillage,Composants externes (la boîte),barrettes,spring bars,Pompes retenant le bracelet entre les cornes,
+habillage,Composants externes (la boîte),bracelet,strap / bracelet,,"cuir, acier, caoutchouc, tissu (NATO)"
+cadran_et_affichage,Habillage visuel,cadran,dial,,
+cadran_et_affichage,Habillage visuel,index_appliques,indices / appliques,Marqueurs horaires (chiffres ou appliques),
+cadran_et_affichage,Habillage visuel,aiguilles,hands,,"heures, minutes, secondes"
+mouvement,source_energie,barillet,barrel,Tambour contenant le ressort moteur,
+mouvement,source_energie,ressort_moteur,mainspring,Accumule l'énergie,
+mouvement,source_energie,arbre_de_barillet,barrel arbor,,
+mouvement,rouage_de_transmission,roue_de_centre,center wheel,,
+mouvement,rouage_de_transmission,roue_de_moyenne,third wheel,,
+mouvement,rouage_de_transmission,roue_de_seconde,fourth wheel,,
+mouvement,rouage_de_transmission,roue_d_echappement,escape wheel,,
+mouvement,echappement,ancre,pallet fork,Avec palettes/pierres,
+mouvement,echappement,roue_d_echappement,escape wheel,,
+mouvement,organe_reglant,balancier,balance wheel,Volant d'inertie,
+mouvement,organe_reglant,spiral,balance spring / hairspring,,
+mouvement,organe_reglant,plateau,roller,Plateau et cheville de plateau,
+mouvement,organe_reglant,raquetterie,regulator,Réglage avance/retard,
+mouvement,remontage_mise_a_l_heure,tige_de_remontoir,stem,,
+mouvement,remontage_mise_a_l_heure,pignon_coulant,sliding pinion,,
+mouvement,remontage_mise_a_l_heure,pignon_de_remontoir,winding pinion,,
+mouvement,remontage_mise_a_l_heure,rochet,ratchet wheel,,
+mouvement,remontage_mise_a_l_heure,cliquet,click,,
+mouvement,remontage_mise_a_l_heure,bascule,yoke,,
+mouvement,remontage_mise_a_l_heure,tirette,setting lever,,
+mouvement,remontage_mise_a_l_heure,renvoi,intermediate setting wheel,,
+mouvement,minuterie_affichage,chaussee,cannon pinion,Porte l'aiguille des minutes,
+mouvement,minuterie_affichage,roue_des_heures,hour wheel,,
+mouvement,minuterie_affichage,roue_de_minuterie,minute wheel,,
+mouvement,bati_structure,platine,main plate,Base du mouvement,
+mouvement,bati_structure,ponts,bridges,,"pont de barillet, pont de rouage, pont de balancier, pont d'ancre"
+mouvement,bati_structure,pierres,jewels,Rubis servant de paliers,

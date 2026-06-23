@@ -1,0 +1,84 @@
+{
+  "schema": "conductor-agents.v3",
+  "agents_registry": "/workspace/00_agents_visuels.json",
+  "agents": [
+    {
+      "id": "minecraft-world-generator-agent",
+      "name": "Agent Monde Minecraft Bedrock",
+      "status": "ready",
+      "profile": "minecraft-world-generator-agent",
+      "path": "/workspace/agent-minecraft-bedrock",
+      "entrypoint": "minecraft_agent.py",
+      "kind": "hermes-profile"
+    },
+    {
+      "id": "minecraft-mcaddon-export-agent",
+      "name": "Agent Export .mcaddon / .mcpack",
+      "status": "ready",
+      "profile": "minecraft-mcaddon-export-agent",
+      "path": "/workspace/agent-minecraft-bedrock",
+      "entrypoint": "mcaddon_export_agent.py",
+      "kind": "hermes-profile"
+    },
+    {
+      "id": "minecraft-mcworld-export-agent",
+      "name": "Agent Export Monde .mcworld",
+      "status": "ready",
+      "profile": "minecraft-mcworld-export-agent",
+      "path": "/workspace/agent-minecraft-bedrock",
+      "entrypoint": "mcworld_export_agent.py",
+      "kind": "hermes-profile"
+    },
+    {
+      "id": "minecraft-skin-agent",
+      "name": "Agent Skins Minecraft",
+      "status": "ready",
+      "profile": "minecraft-skin-agent",
+      "path": "/workspace/agent-minecraft-bedrock",
+      "entrypoint": "skin_agent.py",
+      "kind": "hermes-profile"
+    },
+    {
+      "id": "minecraft-structure-agent",
+      "name": "Agent Structures Minecraft",
+      "status": "ready",
+      "profile": "minecraft-structure-agent",
+      "path": "/workspace/agent-minecraft-bedrock",
+      "entrypoint": "structure_agent.py",
+      "kind": "hermes-profile"
+    },
+    {
+      "id": "production-planner-agent",
+      "name": "Agent Planification Production Horlogère",
+      "status": "ready",
+      "profile": "productionplanner",
+      "path": "/workspace/production-planning-agent",
+      "entrypoint": "agent_prompt.md",
+      "kind": "hermes-profile",
+      "subagents": [
+        "prodstrategy",
+        "prodcapacity",
+        "prodcalendar",
+        "prodpostprod",
+        "prodverifier",
+        "prodprocurement",
+        "prodsop"
+      ],
+      "domain": "manufacture_horlogere_luxe",
+      "script_component_check": "scripts/check_component_availability.py",
+      "supply_chain_best_practices": [
+        "S&OP",
+        "S&OE",
+        "ATP",
+        "CTP",
+        "ABC/XYZ",
+        "stock de sécurité",
+        "fournisseur critique",
+        "what-if",
+        "exception management",
+        "allocation composants rares",
+        "traçabilité qualité"
+      ]
+    }
+  ]
+}

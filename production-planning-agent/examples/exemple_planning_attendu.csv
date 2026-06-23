@@ -1,0 +1,6 @@
+date,poste,of,decision,raison
+2026-07-06,Préparation kits,OF-2607-001,GO,BOM complète
+2026-07-07,Assemblage mouvement,OF-2607-001,GO,composants mouvement disponibles
+2026-07-08,Assemblage mouvement,OF-2607-002,NO-GO,spiral manquant
+2026-07-09,Préparation kits,OF-2607-003,GO partiel,bracelet manquant mais réception confirmée; ne pas finaliser avant réception
+2026-07-10,Contrôle qualité,OF-2607-004,NO-GO,cadrans bloqués qualité

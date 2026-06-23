@@ -1,0 +1,26 @@
+{
+  "id": "agent-minecraft-bedrock",
+  "name": "Agent Minecraft Bedrock complet",
+  "status": "ready",
+  "visible": true,
+  "kind": "python-agent-suite",
+  "source_path": "/workspace/agent-minecraft-bedrock",
+  "real_path": "/opt/data/workspace/agent-minecraft-bedrock",
+  "entrypoint": "minecraft_agent.py",
+  "description": "Suite complète de génération et packaging Minecraft Bedrock.",
+  "open_files": [
+    "/workspace/agent-minecraft-bedrock/agent_prompt.md",
+    "/workspace/agent-minecraft-bedrock/minecraft_agent.py",
+    "/workspace/agent-minecraft-bedrock/structure_agent.py",
+    "/workspace/agent-minecraft-bedrock/skin_agent.py",
+    "/workspace/agent-minecraft-bedrock/mcaddon_export_agent.py",
+    "/workspace/agent-minecraft-bedrock/mcworld_export_agent.py"
+  ],
+  "commands": [
+    "python3 minecraft_agent.py --brief-file examples/village_medieval.md",
+    "python3 structure_agent.py \"village médiéval avec spawn, maisons, marché et donjon\" --name \"Village Demo\" --origin \"0 70 0\"",
+    "python3 mcaddon_export_agent.py --regenerate-uuids",
+    "python3 skin_agent.py \"chevalier futuriste bleu et or\" --name \"Chevalier IA\" --model classic",
+    "python3 mcworld_export_agent.py --create-test-template --world-name \"Test Packaging\""
+  ]
+}

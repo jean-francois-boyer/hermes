@@ -1,0 +1,11 @@
+{
+  "id": "minecraft-mcaddon-export-agent",
+  "name": "Agent Export .mcaddon / .mcpack",
+  "profile": "minecraft-mcaddon-export-agent",
+  "profile_config": "/opt/data/profiles/minecraft-mcaddon-export-agent/config.yaml",
+  "workspace": "/workspace/agent-minecraft-bedrock",
+  "entrypoint": "/workspace/agent-minecraft-bedrock/mcaddon_export_agent.py",
+  "launch_command": "HERMES_HOME=/opt/data hermes --profile minecraft-mcaddon-export-agent",
+  "visible": true,
+  "status": "ready"
+}

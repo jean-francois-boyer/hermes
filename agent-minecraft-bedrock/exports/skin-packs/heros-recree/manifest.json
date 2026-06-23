@@ -1,0 +1,23 @@
+{
+  "format_version": 1,
+  "header": {
+    "name": "Heros Recree Skin Pack",
+    "uuid": "d806e6ca-74c3-489d-88ea-be51dd54075b",
+    "version": [
+      1,
+      0,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "type": "skin_pack",
+      "uuid": "b306ccc5-a41a-40ef-9c3c-9bf77aa4369b",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "World Builder Behavior Pack",
+    "description": "Template de behavior pack Bedrock pour le monde généré par l'agent.",
+    "uuid": "7a5b29b5-0713-4fc7-ae11-e251bd9301b2",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 20, 0]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "fcb09b86-e18f-4e9b-9db1-0d2e3198217f",
+      "version": [1, 0, 0]
+    }
+  ]
+}

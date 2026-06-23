@@ -1,0 +1,15 @@
+{
+  "schema": "workspace-agents.v3",
+  "workspace": "/workspace",
+  "real_workspace": "/opt/data/workspace",
+  "agents_count": 6,
+  "agents_registry": "/workspace/00_agents_visuels.json",
+  "agents": [
+    "minecraft-world-generator-agent",
+    "minecraft-mcaddon-export-agent",
+    "minecraft-mcworld-export-agent",
+    "minecraft-skin-agent",
+    "minecraft-structure-agent",
+    "production-planner-agent"
+  ]
+}

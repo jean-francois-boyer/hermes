@@ -1,0 +1,12 @@
+{
+  "serialize_name": "chevalier-ia",
+  "localization_name": "chevalier-ia",
+  "skins": [
+    {
+      "localization_name": "chevalier-ia",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "skins/chevalier-ia.png",
+      "type": "free"
+    }
+  ]
+}

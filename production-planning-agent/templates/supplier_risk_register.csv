@@ -1,0 +1,4 @@
+fournisseur,composant,reference,lead_time_jours,fiabilite_livraison_pct,taux_qualite_pct,moq,fournisseur_alternatif,risque,plan_mitigation
+Fournisseur Spiral SA,spiral,MH-SQUELETTE-40-OR,20,70,96,10,Non,élevé,sécuriser stock de sécurité + qualifier alternative
+Bracelets Luxe SA,bracelet,MH-SPORT-41-NOIR,12,92,98,20,Oui,moyen,suivi hebdo réceptions
+Interne cadrans,cadran,MH-HERITAGE-36-ACIER,15,88,93,5,Non,élevé,revue qualité entrée + priorisation lots critiques

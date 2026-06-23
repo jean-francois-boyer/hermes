@@ -1,0 +1,12 @@
+{
+  "serialize_name": "heros-aventure-fantasy",
+  "localization_name": "heros-aventure-fantasy",
+  "skins": [
+    {
+      "localization_name": "heros-aventure-fantasy",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "skins/heros-aventure-fantasy.png",
+      "type": "free"
+    }
+  ]
+}

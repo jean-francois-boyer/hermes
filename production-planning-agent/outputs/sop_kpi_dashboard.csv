@@ -1,0 +1,6 @@
+kpi,valeur,unite,interpretation
+Taux OF GO,25.0,%,part des OF lançables complets
+Taux OF bloqués,50.0,%,composants/qualité bloquants
+Charge/capacité,76.3,%,pression capacité atelier
+Promesses à risque,3,OF,ATP/CTP non promettables ou risqués
+Fiabilité fournisseur moyenne,83.3,%,moyenne registre fournisseurs

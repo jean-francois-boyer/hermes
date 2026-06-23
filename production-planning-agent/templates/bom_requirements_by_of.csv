@@ -1,0 +1,2 @@
+of,reference,calibre,quantite_of,composant,section,famille,quantite_par_montre,besoin_total,stock_dispo,stock_reserve,stock_qualite_bloque,reception_attendue,date_reception_confirmee,fiabilite_date,quantite_manquante,statut,decision,commentaire
+OF001,REF-EXEMPLE,CAL-EX,1,spiral,mouvement,organe_reglant,1,1,0,0,0,1,2026-07-09,moyenne,1,MANQUANT,NO-GO assemblage final,Relancer fournisseur et ne pas finaliser avant réception + libération qualité

@@ -1,0 +1,4 @@
+exception,of,reference,composant,priorite,impact,action,owner
+NO_GO_COMPOSANT,OF-2607-002,MH-SQUELETTE-40-OR,spiral,Critique,date promise à risque,"Relancer fournisseur/approvisionnement, confirmer date, arbitrer réservation composants rares.",Approvisionnement
+GO_PARTIEL,OF-2607-003,MH-SPORT-41-NOIR,bracelet,Moyenne,replanification atelier,"Confirmer réception, réserver les composants présents, ne pas finaliser avant libération.",Approvisionnement
+NO_GO_QUALITE,OF-2607-004,MH-HERITAGE-36-ACIER,cadran,Haute,date promise à risque,"Accélérer contrôle entrée / décision qualité, prévoir scénario de replanification.",Qualité

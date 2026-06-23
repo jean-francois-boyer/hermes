@@ -1,0 +1,13 @@
+of,reference,calibre,quantite_of,date_promise,priorite,client_canal,composant,abc,xyz,criticite,besoin_total,stock_dispo,stock_reserve,stock_qualite_bloque,stock_securite,point_commande,couverture_jours,reception_attendue,date_reception,date_confirmee,fiabilite,fournisseur,risque_fournisseur,quantite_manquante,statut,raison
+OF-2607-001,MH-CLASSIQUE-38-ARGENT,CAL-MAN-100,5,2026-07-10,Haute,Boutique Genève,lunette,,,,5,12,5,0,0,0,,,,,,,,0,GO,disponible et libéré selon données fournies
+OF-2607-001,MH-CLASSIQUE-38-ARGENT,CAL-MAN-100,5,2026-07-10,Haute,Boutique Genève,glace,,,,5,20,5,0,0,0,,,,,,,,0,GO,disponible et libéré selon données fournies
+OF-2607-001,MH-CLASSIQUE-38-ARGENT,CAL-MAN-100,5,2026-07-10,Haute,Boutique Genève,carrure,,,,5,7,5,0,0,0,,,,,,,,0,GO,disponible et libéré selon données fournies
+OF-2607-001,MH-CLASSIQUE-38-ARGENT,CAL-MAN-100,5,2026-07-10,Haute,Boutique Genève,fond_de_boite,,,,5,9,5,0,0,0,,,,,,,,0,GO,disponible et libéré selon données fournies
+OF-2607-001,MH-CLASSIQUE-38-ARGENT,CAL-MAN-100,5,2026-07-10,Haute,Boutique Genève,joints_etancheite,C,X,,20,80,20,0,50,100,,,,,,,,0,GO,disponible et libéré selon données fournies
+OF-2607-001,MH-CLASSIQUE-38-ARGENT,CAL-MAN-100,5,2026-07-10,Haute,Boutique Genève,cadran,,,,5,6,5,0,0,0,,,,,,Interne cadrans,élevé,0,GO,disponible et libéré selon données fournies
+OF-2607-001,MH-CLASSIQUE-38-ARGENT,CAL-MAN-100,5,2026-07-10,Haute,Boutique Genève,aiguilles,,,,15,18,15,0,0,0,,,,,,,,0,GO,disponible et libéré selon données fournies
+OF-2607-001,MH-CLASSIQUE-38-ARGENT,CAL-MAN-100,5,2026-07-10,Haute,Boutique Genève,spiral,A,Z,,5,7,5,0,6,10,,,,,,Fournisseur Spiral SA,élevé,0,GO,disponible et libéré selon données fournies
+OF-2607-002,MH-SQUELETTE-40-OR,CAL-MAN-200,2,2026-07-08,Critique,Client VIP,spiral,A,Z,,2,0,0,0,6,10,,4,2026-07-09,False,moyenne,Fournisseur Spiral SA,élevé,2,NO_GO_COMPOSANT,composant obligatoire manquant
+OF-2607-002,MH-SQUELETTE-40-OR,CAL-MAN-200,2,2026-07-08,Critique,Client VIP,ponts,,,,2,4,2,0,0,0,,,,,,,,0,GO,disponible et libéré selon données fournies
+OF-2607-003,MH-SPORT-41-NOIR,CAL-MAN-100,8,2026-07-18,Moyenne,Wholesale EU,bracelet,B,Y,,8,3,3,0,8,20,,8,2026-07-11,True,haute,Bracelets Luxe SA,moyen,5,GO_PARTIEL,réception attendue: finalisation à confirmer après réception/libération qualité
+OF-2607-004,MH-HERITAGE-36-ACIER,CAL-MAN-100,10,2026-07-25,Haute,Lancement collection,cadran,,,,10,0,0,10,0,0,,10,2026-07-07,True,haute,Interne cadrans,élevé,10,NO_GO_QUALITE,stock disponible physiquement mais bloqué qualité

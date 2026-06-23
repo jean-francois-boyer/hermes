@@ -1,0 +1,20 @@
+version: 1
+workspace: /workspace
+registry: /workspace/agents.json
+agents:
+  - id: minecraft-bedrock-world-agent
+    name: Minecraft Bedrock World Agent
+    status: ready
+    kind: prompt-agent
+    path: /workspace/minecraft-bedrock-world-agent
+    entrypoint: agent_prompt.md
+    description: Agent francophone pour concevoir des mondes Minecraft Bedrock compatibles Nintendo Switch via Realms.
+    tags: [minecraft, bedrock, switch, realms, world-design]
+  - id: agent-minecraft-bedrock
+    name: Agent Minecraft Bedrock complet
+    status: ready
+    kind: python-agent-suite
+    path: /workspace/agent-minecraft-bedrock
+    entrypoint: minecraft_agent.py
+    description: Suite d'agents Python pour blueprints, structures, skins, mcaddon, mcpack et mcworld.
+    tags: [minecraft, bedrock, addon, mcfunction, mcaddon, mcworld, skins]

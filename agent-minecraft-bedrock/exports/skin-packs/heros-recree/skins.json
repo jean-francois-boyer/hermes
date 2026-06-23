@@ -1,0 +1,12 @@
+{
+  "serialize_name": "heros-recree",
+  "localization_name": "heros-recree",
+  "skins": [
+    {
+      "localization_name": "heros-recree",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "skins/heros-recree.png",
+      "type": "free"
+    }
+  ]
+}

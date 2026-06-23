@@ -1,0 +1,5 @@
+of,reference,date_promise,atp_composants,atp_raison,ctp_capacite,ctp_raison,statut_promesse,date_promesse_realiste,risque
+OF-2607-001,MH-CLASSIQUE-38-ARGENT,2026-07-10,OUI,composants disponibles selon données fournies,OUI,charge estimée 34.5h vs capacité globale 226.0h,PROMETTABLE,2026-07-10,faible
+OF-2607-002,MH-SQUELETTE-40-OR,2026-07-08,NON,spiral: NO_GO_COMPOSANT (composant obligatoire manquant),OUI,charge estimée 13.8h vs capacité globale 226.0h,NON_PROMETTABLE,à revalider après résolution exceptions,élevé
+OF-2607-003,MH-SPORT-41-NOIR,2026-07-18,PARTIEL,bracelet: GO_PARTIEL (réception attendue: finalisation à confirmer après réception/libération qualité),OUI,charge estimée 55.2h vs capacité globale 226.0h,PROMESSE_RISQUEE,à revalider après résolution exceptions,moyen
+OF-2607-004,MH-HERITAGE-36-ACIER,2026-07-25,NON,cadran: NO_GO_QUALITE (stock disponible physiquement mais bloqué qualité),OUI,charge estimée 69.0h vs capacité globale 226.0h,NON_PROMETTABLE,à revalider après résolution exceptions,élevé

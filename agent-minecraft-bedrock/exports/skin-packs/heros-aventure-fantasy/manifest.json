@@ -1,0 +1,23 @@
+{
+  "format_version": 1,
+  "header": {
+    "name": "Heros Aventure Fantasy Skin Pack",
+    "uuid": "ce7ce8e9-2043-4154-aa34-f5d7d91a34c0",
+    "version": [
+      1,
+      0,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "type": "skin_pack",
+      "uuid": "3d9f1333-dda3-4d29-84e8-60fe1b9cacc0",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}

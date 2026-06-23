@@ -1,0 +1,17 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Nyon Reborn Behavior Pack",
+    "description": "Add-on de reconstruction de Nyon (Suisse) — spawn, regles et visite des landmarks.",
+    "uuid": "7c3a1f64-2e8b-4d9a-bf21-5a6c0e9d4b7f",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 20, 0]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "b9e042d7-6f1c-44a3-8e57-2d1b8c3f90a6",
+      "version": [1, 0, 0]
+    }
+  ]
+}

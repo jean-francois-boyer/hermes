@@ -1,0 +1,122 @@
+{
+  "schema": "operations-agents.v3",
+  "source": "/workspace/00_agents_visuels.json",
+  "agents": [
+    {
+      "id": "minecraft-world-generator-agent",
+      "name": "Agent Monde Minecraft Bedrock",
+      "kind": "hermes-profile",
+      "visible": true,
+      "profile": "minecraft-world-generator-agent",
+      "profile_config": "/opt/data/profiles/minecraft-world-generator-agent/config.yaml",
+      "workspace": "/workspace/agent-minecraft-bedrock",
+      "entrypoint": "/workspace/agent-minecraft-bedrock/minecraft_agent.py",
+      "launch_command": "HERMES_HOME=/opt/data hermes --profile minecraft-world-generator-agent"
+    },
+    {
+      "id": "minecraft-mcaddon-export-agent",
+      "name": "Agent Export .mcaddon / .mcpack",
+      "kind": "hermes-profile",
+      "visible": true,
+      "profile": "minecraft-mcaddon-export-agent",
+      "profile_config": "/opt/data/profiles/minecraft-mcaddon-export-agent/config.yaml",
+      "workspace": "/workspace/agent-minecraft-bedrock",
+      "entrypoint": "/workspace/agent-minecraft-bedrock/mcaddon_export_agent.py",
+      "launch_command": "HERMES_HOME=/opt/data hermes --profile minecraft-mcaddon-export-agent"
+    },
+    {
+      "id": "minecraft-mcworld-export-agent",
+      "name": "Agent Export Monde .mcworld",
+      "kind": "hermes-profile",
+      "visible": true,
+      "profile": "minecraft-mcworld-export-agent",
+      "profile_config": "/opt/data/profiles/minecraft-mcworld-export-agent/config.yaml",
+      "workspace": "/workspace/agent-minecraft-bedrock",
+      "entrypoint": "/workspace/agent-minecraft-bedrock/mcworld_export_agent.py",
+      "launch_command": "HERMES_HOME=/opt/data hermes --profile minecraft-mcworld-export-agent"
+    },
+    {
+      "id": "minecraft-skin-agent",
+      "name": "Agent Skins Minecraft",
+      "kind": "hermes-profile",
+      "visible": true,
+      "profile": "minecraft-skin-agent",
+      "profile_config": "/opt/data/profiles/minecraft-skin-agent/config.yaml",
+      "workspace": "/workspace/agent-minecraft-bedrock",
+      "entrypoint": "/workspace/agent-minecraft-bedrock/skin_agent.py",
+      "launch_command": "HERMES_HOME=/opt/data hermes --profile minecraft-skin-agent"
+    },
+    {
+      "id": "minecraft-structure-agent",
+      "name": "Agent Structures Minecraft",
+      "kind": "hermes-profile",
+      "visible": true,
+      "profile": "minecraft-structure-agent",
+      "profile_config": "/opt/data/profiles/minecraft-structure-agent/config.yaml",
+      "workspace": "/workspace/agent-minecraft-bedrock",
+      "entrypoint": "/workspace/agent-minecraft-bedrock/structure_agent.py",
+      "launch_command": "HERMES_HOME=/opt/data hermes --profile minecraft-structure-agent"
+    },
+    {
+      "id": "production-planner-agent",
+      "name": "Agent Planification Production Horlogère",
+      "kind": "hermes-profile",
+      "visible": true,
+      "profile": "productionplanner",
+      "profile_config": "/opt/data/profiles/productionplanner/config.yaml",
+      "workspace": "/workspace/production-planning-agent",
+      "entrypoint": "/workspace/production-planning-agent/agent_prompt.md",
+      "launch_command": "HERMES_HOME=/opt/data hermes --profile productionplanner",
+      "subagents": [
+        "prodstrategy",
+        "prodcapacity",
+        "prodcalendar",
+        "prodpostprod",
+        "prodverifier",
+        "prodprocurement",
+        "prodsop"
+      ],
+      "chat_command": "HERMES_HOME=/opt/data hermes --profile productionplanner chat -q \"Planifie mes OF horlogers selon BOM, stocks composants et capacité atelier\"",
+      "capabilities": [
+        "planning_production_horlogere",
+        "bom_check",
+        "components_shortage",
+        "mrp",
+        "ordonnancement_atelier",
+        "capacity_planning",
+        "quality_control",
+        "luxury_watch_assembly",
+        "procurement_planning",
+        "supplier_followup",
+        "component_availability_check",
+        "bom_of_stock_matrix",
+        "sop",
+        "s_and_oe",
+        "atp_ctp",
+        "abc_xyz",
+        "supplier_risk",
+        "what_if_scenarios",
+        "exception_management",
+        "rare_component_allocation",
+        "quality_traceability",
+        "inventory_policy"
+      ],
+      "domain": "manufacture_horlogere_luxe",
+      "blocking_rule": "assemblage final impossible si un composant obligatoire manque",
+      "script_component_check": "/workspace/production-planning-agent/scripts/check_component_availability.py",
+      "supply_chain_best_practices": [
+        "S&OP",
+        "S&OE",
+        "ATP",
+        "CTP",
+        "ABC/XYZ",
+        "stock de sécurité",
+        "fournisseur critique",
+        "what-if",
+        "exception management",
+        "allocation composants rares",
+        "traçabilité qualité"
+      ]
+    }
+  ]
+}

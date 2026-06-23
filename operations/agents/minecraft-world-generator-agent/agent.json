@@ -1,0 +1,11 @@
+{
+  "id": "minecraft-world-generator-agent",
+  "name": "Agent Monde Minecraft Bedrock",
+  "profile": "minecraft-world-generator-agent",
+  "profile_config": "/opt/data/profiles/minecraft-world-generator-agent/config.yaml",
+  "workspace": "/workspace/agent-minecraft-bedrock",
+  "entrypoint": "/workspace/agent-minecraft-bedrock/minecraft_agent.py",
+  "launch_command": "HERMES_HOME=/opt/data hermes --profile minecraft-world-generator-agent",
+  "visible": true,
+  "status": "ready"
+}

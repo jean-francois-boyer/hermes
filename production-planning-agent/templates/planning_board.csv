@@ -1,0 +1,2 @@
+of,reference,calibre,quantite,date_promise,priorite,statut_composants,statut_qualite,poste_actuel,date_debut_prevue,date_fin_prevue,composant_bloquant,date_reception_attendue,capacite_requise_h,risques,decision,prochaine_action
+OF001,REF-EXEMPLE,CAL-EX,1,,Haute,bloque_composant,a_liberer,preparation_kit,,,,,0,,Verifier BOM et stock,

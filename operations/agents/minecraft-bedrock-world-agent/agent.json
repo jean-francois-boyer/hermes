@@ -1,0 +1,22 @@
+{
+  "id": "minecraft-bedrock-world-agent",
+  "name": "Minecraft Bedrock World Agent",
+  "status": "ready",
+  "visible": true,
+  "kind": "prompt-agent",
+  "source_path": "/workspace/minecraft-bedrock-world-agent",
+  "real_path": "/opt/data/workspace/minecraft-bedrock-world-agent",
+  "entrypoint": "agent_prompt.md",
+  "description": "Agent francophone pour concevoir des mondes Minecraft Bedrock compatibles Nintendo Switch via Realms.",
+  "open_files": [
+    "/workspace/minecraft-bedrock-world-agent/agent_prompt.md",
+    "/workspace/minecraft-bedrock-world-agent/world_brief_template.md",
+    "/workspace/minecraft-bedrock-world-agent/output_format.md",
+    "/workspace/minecraft-bedrock-world-agent/examples/village_medieval.md"
+  ],
+  "runbook": [
+    "Ouvrir agent_prompt.md comme prompt système.",
+    "Remplir world_brief_template.md ou utiliser examples/village_medieval.md.",
+    "Demander un monde Bedrock compatible Switch via Realms."
+  ]
+}

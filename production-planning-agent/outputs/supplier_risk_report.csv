@@ -1,0 +1,4 @@
+fournisseur,composant,lead_time_jours,fiabilite_livraison_pct,taux_qualite_pct,risque,of_impactes,action_recommandee
+Fournisseur Spiral SA,spiral,20,70,96,élevé,OF-2607-002,revue fournisseur prioritaire
+Bracelets Luxe SA,bracelet,12,92,98,moyen,OF-2607-003,revue fournisseur prioritaire
+Interne cadrans,cadran,15,88,93,élevé,OF-2607-004,revue fournisseur prioritaire

@@ -1,0 +1,11 @@
+{
+  "id": "minecraft-skin-agent",
+  "name": "Agent Skins Minecraft",
+  "profile": "minecraft-skin-agent",
+  "profile_config": "/opt/data/profiles/minecraft-skin-agent/config.yaml",
+  "workspace": "/workspace/agent-minecraft-bedrock",
+  "entrypoint": "/workspace/agent-minecraft-bedrock/skin_agent.py",
+  "launch_command": "HERMES_HOME=/opt/data hermes --profile minecraft-skin-agent",
+  "visible": true,
+  "status": "ready"
+}

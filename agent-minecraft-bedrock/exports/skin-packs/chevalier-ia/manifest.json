@@ -1,0 +1,23 @@
+{
+  "format_version": 1,
+  "header": {
+    "name": "Chevalier IA Skin Pack",
+    "uuid": "ac11a2fc-7263-4e4f-8b84-742076cad0c7",
+    "version": [
+      1,
+      0,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "type": "skin_pack",
+      "uuid": "c5d2fe75-2e83-4b40-b7b1-24c5f3e5d65e",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}

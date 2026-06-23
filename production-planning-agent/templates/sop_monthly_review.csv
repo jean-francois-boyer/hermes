@@ -1,0 +1,6 @@
+cycle,revue,theme,input,decision_attendue,owner,statut
+2026-07,Demand Review,Commandes fermes / prévisions,"commandes clients, forecast boutique, lancement collection",valider demande par famille/reference,Sales / Demand Planning,à préparer
+2026-07,Supply Review,Composants / capacité / qualité,"stocks, réceptions, capacité atelier, risques fournisseurs",valider capacité et contraintes supply,Supply Chain / Production,à préparer
+2026-07,Pre-S&OP,Scénarios et arbitrages,"écarts demande-supply, OF à risque, composants rares",préparer arbitrages direction,S&OP Manager,à préparer
+2026-07,Executive S&OP,Décisions direction,"scénarios, risques clients, allocation composants rares",valider priorités et promesses client,Direction,à préparer
+2026-07,S&OE,Exécution court terme,"OF semaine, manquants, retards, capacité réelle",lancer/replanifier OF,Planning atelier,hebdomadaire

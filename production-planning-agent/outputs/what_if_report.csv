@@ -1,0 +1,6 @@
+scenario,of_a_risque,impact,action_recommandee
+retard spiral +10 jours,OF-2607-002;OF-2607-003;OF-2607-004,OF avec réception attendue ou composant manquant glissent; promesses à revalider,"avancer OF complets, relancer fournisseur, alerter commercial"
+réception bracelet 50%,OF-2607-002;OF-2607-003;OF-2607-004,allocation nécessaire; finalisation partielle possible,"prioriser VIP/date promise, repousser OF faible priorité"
+capacité atelier -20%,OF-2607-002;OF-2607-003;OF-2607-004,CTP dégradé; charge atelier à réduire,"réduire lancements, sous-traiter si validé, lisser charge"
+commande VIP urgente,OF-2607-002;OF-2607-003;OF-2607-004,réallocation composants rares possible,arbitrage direction S&OP et communication clients impactés
+lot cadrans rejeté qualité,OF-2607-002;OF-2607-003;OF-2607-004,NO-GO qualité; WIP bloqué,"prioriser contrôle entrée, ouvrir plan correction fournisseur"

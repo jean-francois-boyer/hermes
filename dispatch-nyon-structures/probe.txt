@@ -1,0 +1,1 @@
+# dossier de livraison worker-nyon-structures (voir structure_agent.py + generated/functions/)

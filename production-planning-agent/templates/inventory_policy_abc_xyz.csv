@@ -1,0 +1,6 @@
+composant,abc,xyz,criticite,lead_time_jours,conso_mensuelle_moy,stock_securite,point_commande,politique
+spiral,A,Z,critique,20,8,6,10,surveillance forte + validation direction si allocation
+balancier,A,Y,critique,18,10,5,12,stock sécurisé
+cadran,A,Z,spécifique référence,15,12,4,10,pilotage par référence/série
+bracelet,B,Y,important,12,20,8,20,réappro régulier
+joints_etancheite,C,X,standard mais bloquant,5,80,50,100,réappro automatique

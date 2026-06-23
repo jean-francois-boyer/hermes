@@ -1,0 +1,243 @@
+{
+  "montre_mecanique": {
+    "type": "Montre mécanique à remontage manuel",
+    "habillage": {
+      "description": "Composants externes (la boîte)",
+      "composants": {
+        "lunette": {
+          "nom_en": "bezel",
+          "role": "Anneau supérieur maintenant la glace, fixe ou tournant",
+          "variantes": [
+            "fixe",
+            "tournante unidirectionnelle",
+            "tournante bidirectionnelle"
+          ]
+        },
+        "glace": {
+          "nom_en": "crystal",
+          "role": "Verre de protection du cadran",
+          "materiaux": [
+            "saphir",
+            "minéral",
+            "acrylique (hesalite)"
+          ]
+        },
+        "carrure": {
+          "nom_en": "case / middle case",
+          "role": "Corps central de la boîte qui loge le mouvement"
+        },
+        "fond_de_boite": {
+          "nom_en": "case back",
+          "role": "Ferme la boîte côté poignet",
+          "variantes": [
+            "plein",
+            "transparent (saphir)",
+            "vissé",
+            "clipsé"
+          ]
+        },
+        "joints_etancheite": {
+          "nom_en": "gaskets / seals",
+          "role": "Assurent l'étanchéité",
+          "emplacements": [
+            "carrure",
+            "fond",
+            "couronne",
+            "glace"
+          ]
+        },
+        "couronne": {
+          "nom_en": "crown",
+          "role": "Remontage et mise à l'heure (liée à la tige de remontoir)"
+        },
+        "cornes": {
+          "nom_en": "lugs",
+          "role": "Anses de fixation du bracelet à la carrure"
+        },
+        "barrettes": {
+          "nom_en": "spring bars",
+          "role": "Pompes retenant le bracelet entre les cornes"
+        },
+        "bracelet": {
+          "nom_en": "strap / bracelet",
+          "materiaux": [
+            "cuir",
+            "acier",
+            "caoutchouc",
+            "tissu (NATO)"
+          ]
+        }
+      }
+    },
+    "cadran_et_affichage": {
+      "description": "Habillage visuel",
+      "composants": {
+        "cadran": {
+          "nom_en": "dial"
+        },
+        "index_appliques": {
+          "nom_en": "indices / appliques",
+          "role": "Marqueurs horaires (chiffres ou appliques)"
+        },
+        "aiguilles": {
+          "nom_en": "hands",
+          "types": [
+            "heures",
+            "minutes",
+            "secondes"
+          ]
+        }
+      }
+    },
+    "mouvement": {
+      "description": "Le calibre (mécanisme interne)",
+      "source_energie": {
+        "description": "Le moteur",
+        "composants": {
+          "barillet": {
+            "nom_en": "barrel",
+            "role": "Tambour contenant le ressort moteur"
+          },
+          "ressort_moteur": {
+            "nom_en": "mainspring",
+            "role": "Accumule l'énergie"
+          },
+          "arbre_de_barillet": {
+            "nom_en": "barrel arbor"
+          }
+        }
+      },
+      "rouage_de_transmission": {
+        "description": "Engrenages de transmission",
+        "composants": {
+          "roue_de_centre": {
+            "nom_en": "center wheel"
+          },
+          "roue_de_moyenne": {
+            "nom_en": "third wheel"
+          },
+          "roue_de_seconde": {
+            "nom_en": "fourth wheel"
+          },
+          "roue_d_echappement": {
+            "nom_en": "escape wheel"
+          }
+        }
+      },
+      "echappement": {
+        "description": "Régulation de la libération d'énergie",
+        "composants": {
+          "ancre": {
+            "nom_en": "pallet fork",
+            "role": "Avec palettes/pierres"
+          },
+          "roue_d_echappement": {
+            "nom_en": "escape wheel"
+          }
+        }
+      },
+      "organe_reglant": {
+        "description": "Régulateur de cadence",
+        "composants": {
+          "balancier": {
+            "nom_en": "balance wheel",
+            "role": "Volant d'inertie"
+          },
+          "spiral": {
+            "nom_en": "balance spring / hairspring"
+          },
+          "plateau": {
+            "nom_en": "roller",
+            "role": "Plateau et cheville de plateau"
+          },
+          "raquetterie": {
+            "nom_en": "regulator",
+            "role": "Réglage avance/retard"
+          }
+        }
+      },
+      "remontage_mise_a_l_heure": {
+        "description": "Mécanisme de remontage et de mise à l'heure",
+        "composants": {
+          "tige_de_remontoir": {
+            "nom_en": "stem"
+          },
+          "pignon_coulant": {
+            "nom_en": "sliding pinion"
+          },
+          "pignon_de_remontoir": {
+            "nom_en": "winding pinion"
+          },
+          "rochet": {
+            "nom_en": "ratchet wheel"
+          },
+          "cliquet": {
+            "nom_en": "click"
+          },
+          "bascule": {
+            "nom_en": "yoke"
+          },
+          "tirette": {
+            "nom_en": "setting lever"
+          },
+          "renvoi": {
+            "nom_en": "intermediate setting wheel"
+          }
+        }
+      },
+      "minuterie_affichage": {
+        "description": "Rouage de minuterie (affichage de l'heure)",
+        "composants": {
+          "chaussee": {
+            "nom_en": "cannon pinion",
+            "role": "Porte l'aiguille des minutes"
+          },
+          "roue_des_heures": {
+            "nom_en": "hour wheel"
+          },
+          "roue_de_minuterie": {
+            "nom_en": "minute wheel"
+          }
+        }
+      },
+      "bati_structure": {
+        "description": "Bâti et paliers",
+        "composants": {
+          "platine": {
+            "nom_en": "main plate",
+            "role": "Base du mouvement"
+          },
+          "ponts": {
+            "nom_en": "bridges",
+            "types": [
+              "pont de barillet",
+              "pont de rouage",
+              "pont de balancier",
+              "pont d'ancre"
+            ]
+          },
+          "pierres": {
+            "nom_en": "jewels",
+            "role": "Rubis servant de paliers"
+          }
+        }
+      }
+    },
+    "chaine_cinematique": [
+      "barillet (énergie)",
+      "rouage de transmission",
+      "échappement",
+      "balancier-spiral (régulation)",
+      "retour vers la minuterie",
+      "affichage (aiguilles)"
+    ],
+    "empilement_en_coupe": [
+      "lunette",
+      "glace",
+      "cadran",
+      "mouvement",
+      "carrure (logement)",
+      "fond de boîte"
+    ]
+  }
+}

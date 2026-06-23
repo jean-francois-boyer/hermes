@@ -1,0 +1,3 @@
+composant,stock_disponible,of_demandeur,priorite_of,client_canal,quantite_demandee,allocation_recommandee,of_reporte,justification
+spiral,2,OF-2607-002,Critique,Client VIP,2,2,,client VIP + date promise proche
+spiral,2,OF-2607-005,Moyenne,Wholesale,2,0,OF-2607-005,"priorité inférieure, attendre prochaine réception"

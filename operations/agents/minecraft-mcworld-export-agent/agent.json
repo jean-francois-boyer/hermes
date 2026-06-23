@@ -1,0 +1,11 @@
+{
+  "id": "minecraft-mcworld-export-agent",
+  "name": "Agent Export Monde .mcworld",
+  "profile": "minecraft-mcworld-export-agent",
+  "profile_config": "/opt/data/profiles/minecraft-mcworld-export-agent/config.yaml",
+  "workspace": "/workspace/agent-minecraft-bedrock",
+  "entrypoint": "/workspace/agent-minecraft-bedrock/mcworld_export_agent.py",
+  "launch_command": "HERMES_HOME=/opt/data hermes --profile minecraft-mcworld-export-agent",
+  "visible": true,
+  "status": "ready"
+}

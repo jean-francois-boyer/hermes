@@ -1,0 +1,5 @@
+exception,seuil,priorite,action,owner
+OF bloqué composant,composant obligatoire manquant,haute,relance fournisseur + scénario de replanification,Approvisionnement
+Date promise irréaliste,ATP ou CTP = NON,critique,escalade S&OP / commercial,Planning
+Stock qualité bloqué,stock_qualite_bloque > 0 sur OF prioritaire,haute,accélérer contrôle entrée / décision qualité,Qualité
+Composant rare alloué à OF non prioritaire,ABC=A et OF priorité basse,moyenne,arbitrage allocation,S&OP

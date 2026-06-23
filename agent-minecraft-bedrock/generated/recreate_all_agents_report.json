@@ -1,0 +1,92 @@
+{
+  "status": "ok",
+  "generated_at": "2026-06-21T20:37:07",
+  "root": "/opt/data/workspace/agent-minecraft-bedrock",
+  "agents": {
+    "minecraft_agent.py": "Agent monde : blueprint, quêtes, PNJ, commandes Bedrock, add-on template.",
+    "mcaddon_export_agent.py": "Agent export : prépare un .mcaddon importable Bedrock.",
+    "mcworld_export_agent.py": "Agent monde complet : injecte les packs dans un template .mcworld.",
+    "skin_agent.py": "Agent skins : génère PNG 64x64, prévisualisation et .mcpack.",
+    "structure_agent.py": "Agent structures : génère villages/donjons/sanctuaires en .mcfunction."
+  },
+  "results": [
+    {
+      "cmd": [
+        "/opt/hermes/.venv/bin/python3",
+        "-m",
+        "py_compile",
+        "minecraft_agent.py",
+        "mcaddon_export_agent.py",
+        "mcworld_export_agent.py",
+        "skin_agent.py",
+        "structure_agent.py"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "cmd": [
+        "/opt/hermes/.venv/bin/python3",
+        "minecraft_agent.py",
+        "Crée un monde aventure fantasy compatible Switch avec village, quêtes, donjon, PNJ et économie."
+      ],
+      "returncode": 0,
+      "stdout": "Agent Minecraft terminé ✅\n- blueprint: /opt/data/workspace/agent-minecraft-bedrock/generated/world_blueprint.md\n- named_blueprint: /opt/data/workspace/agent-minecraft-bedrock/generated/le-royaume-des-blocs-oublies-blueprint.md\n- mcaddon: /opt/data/workspace/agent-minecraft-bedrock/generated/le-royaume-des-blocs-oublies.mcaddon\n- addon_dir: /opt/data/workspace/agent-minecraft-bedrock/generated/addon",
+      "stderr": ""
+    },
+    {
+      "cmd": [
+        "/opt/hermes/.venv/bin/python3",
+        "structure_agent.py",
+        "village médiéval avec spawn, maisons, marché et donjon",
+        "--name",
+        "Village Recree",
+        "--origin",
+        "0 70 0"
+      ],
+      "returncode": 0,
+      "stdout": "Structure Minecraft générée ✅\n- main: /opt/data/workspace/agent-minecraft-bedrock/generated/structures/village-recree/village-recree.mcfunction\n- spawn: /opt/data/workspace/agent-minecraft-bedrock/generated/structures/village-recree/village-recree_spawn.mcfunction\n- market: /opt/data/workspace/agent-minecraft-bedrock/generated/structures/village-recree/village-recree_market.mcfunction\n- dungeon: /opt/data/workspace/agent-minecraft-bedrock/generated/structures/village-recree/village-recree_dungeon.mcfunction\n- houses: /opt/data/workspace/agent-minecraft-bedrock/generated/structures/village-recree/village-recree_houses.mcfunction\n- guide: /opt/data/workspace/agent-minecraft-bedrock/generated/structures/village-recree/village-recree-GUIDE.md\n- zip: /opt/data/workspace/agent-minecraft-bedrock/exports/structures/village-recree-structures.zip",
+      "stderr": ""
+    },
+    {
+      "cmd": [
+        "/opt/hermes/.venv/bin/python3",
+        "skin_agent.py",
+        "héros aventure fantasy vert bleu et or",
+        "--name",
+        "Heros Recree",
+        "--model",
+        "slim"
+      ],
+      "returncode": 0,
+      "stdout": "Skin Minecraft généré ✅\n- skin: /opt/data/workspace/agent-minecraft-bedrock/generated/skins/heros-recree.png\n- preview: /opt/data/workspace/agent-minecraft-bedrock/generated/skins/heros-recree-preview.png\n- report: /opt/data/workspace/agent-minecraft-bedrock/generated/skins/heros-recree.md\n- mcpack: /opt/data/workspace/agent-minecraft-bedrock/exports/skin-packs/heros-recree.mcpack",
+      "stderr": ""
+    },
+    {
+      "cmd": [
+        "/opt/hermes/.venv/bin/python3",
+        "mcaddon_export_agent.py",
+        "--regenerate-uuids",
+        "--name",
+        "Agents Minecraft Recréés"
+      ],
+      "returncode": 0,
+      "stdout": "Export .mcaddon terminé ✅\n- nom: Agents Minecraft Recréés\n- mcaddon: /opt/data/workspace/agent-minecraft-bedrock/exports/import-ready/agents-minecraft-recrees.mcaddon\n- behavior_mcpack: /opt/data/workspace/agent-minecraft-bedrock/exports/import-ready/agents-minecraft-recrees-behavior.mcpack\n- resource_mcpack: /opt/data/workspace/agent-minecraft-bedrock/exports/import-ready/agents-minecraft-recrees-resources.mcpack\n- guide_import: /opt/data/workspace/agent-minecraft-bedrock/exports/import-ready/agents-minecraft-recrees-IMPORT.md",
+      "stderr": ""
+    },
+    {
+      "cmd": [
+        "/opt/hermes/.venv/bin/python3",
+        "mcworld_export_agent.py",
+        "--create-test-template",
+        "--world-name",
+        "Test Agents Recréés"
+      ],
+      "returncode": 0,
+      "stdout": "Export .mcworld terminé ✅\n- monde: Test Agents Recréés\n- mcworld: /opt/data/workspace/agent-minecraft-bedrock/exports/worlds/test-agents-recrees.mcworld\n- guide_import: /opt/data/workspace/agent-minecraft-bedrock/exports/worlds/test-agents-recrees-MCWORLD-IMPORT.md\n- behavior_pack: Le Royaume des Blocs Oubliés - Behavior Pack\n- resource_pack: Le Royaume des Blocs Oubliés - Resource Pack",
+      "stderr": ""
+    }
+  ],
+  "important_note": "Le .mcworld de test valide le packaging mais n'est pas un vrai monde jouable sans template Bedrock réel."
+}

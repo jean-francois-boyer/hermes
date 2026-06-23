@@ -1,0 +1,11 @@
+composant,abc,xyz,stock_dispo,stock_securite,point_commande,couverture_jours,statut_politique
+lunette,,,12,0,0,,OK/NA
+glace,,,20,0,0,,OK/NA
+carrure,,,7,0,0,,OK/NA
+fond_de_boite,,,9,0,0,,OK/NA
+joints_etancheite,C,X,80,50,100,,SOUS_POINT_COMMANDE
+cadran,,,6,0,0,,OK/NA
+aiguilles,,,18,0,0,,OK/NA
+spiral,A,Z,7,6,10,,SOUS_POINT_COMMANDE
+ponts,,,4,0,0,,OK/NA
+bracelet,B,Y,3,8,20,,SOUS_POINT_COMMANDE

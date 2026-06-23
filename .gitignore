@@ -1,0 +1,35 @@
+# Caches / temporaires
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.DS_Store
+Thumbs.db
+
+# Miroir Google Drive local (évite récursions et doublons énormes)
+drive/
+
+# Rapports locaux temporaires / scripts de partage ponctuels
+*_share_report.json
+*_drive_share_report.json
+_workspace_to_drive_upload_report.json
+send_minecraft_email.py
+share_*_email.py
+share_minecraft_drive.py
+upload_nyon_to_drive.py
+
+# Secrets / tokens éventuels
+.env
+*.pem
+*.key
+*token*.json
+*credentials*.json
+*client_secret*.json
+
+# Archives générées très lourdes optionnelles
+# (laisser commenté si tu veux versionner les .mcworld/.mcaddon/.zip)
+# *.mcworld
+# *.mcaddon
+# *.mcpack
+# *.zip

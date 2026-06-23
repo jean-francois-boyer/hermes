@@ -1,0 +1,6 @@
+jour,poste,objectif,of_references,conditions_avant_lancement,risques,actions_approvisionnement
+Lundi,Préparation kits,Préparer seulement les OF complets,,BOM complète + composants libérés qualité,,
+Mardi,Assemblage mouvement,Assembler lots prioritaires,,Kits complets disponibles,,
+Mercredi,Emboîtage + cadran/aiguilles,Avancer montres prêtes,,Mouvement assemblé + habillage complet,,
+Jeudi,Réglage + tests,Contrôles techniques,,Montres assemblées,,
+Vendredi,QC final + packaging,Libérer expéditions,,Tests OK + certificats + packaging,,

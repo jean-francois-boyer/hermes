@@ -1,0 +1,30 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "Pack généré par l’agent Minecraft Bedrock local",
+    "name": "Le Royaume des Blocs Oubliés - Resource Pack",
+    "uuid": "8f4d9056-72ca-4ab2-8432-0239db0b3b4f",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      20,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "Module resource pack",
+      "type": "resources",
+      "uuid": "24450b2b-bb32-4372-80c8-e64ff80cf99f",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}

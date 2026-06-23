@@ -1,0 +1,11 @@
+{
+  "id": "minecraft-structure-agent",
+  "name": "Agent Structures Minecraft",
+  "profile": "minecraft-structure-agent",
+  "profile_config": "/opt/data/profiles/minecraft-structure-agent/config.yaml",
+  "workspace": "/workspace/agent-minecraft-bedrock",
+  "entrypoint": "/workspace/agent-minecraft-bedrock/structure_agent.py",
+  "launch_command": "HERMES_HOME=/opt/data hermes --profile minecraft-structure-agent",
+  "visible": true,
+  "status": "ready"
+}

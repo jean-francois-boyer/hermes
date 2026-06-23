@@ -1,0 +1,7 @@
+poste,capacite_h_semaine,temps_h_par_montre,competence,contrainte
+Préparation kits,24,0.5,logistique atelier,prioriser OF complets
+Assemblage mouvement,80,3.0,horloger mouvement,CAL-MAN-200 uniquement 1 horloger senior
+Emboîtage,40,1.0,emboîtage,pas d'emboîtage si cadran/aiguilles/habillage incomplets
+Réglage / tests,32,1.2,réglage,buffer reprises 20%
+Contrôle qualité,30,0.8,QC final,libération obligatoire avant packaging
+Packaging / expédition,20,0.4,logistique luxe,certificat + packaging complet

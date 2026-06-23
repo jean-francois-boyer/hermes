@@ -1,0 +1,30 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "Pack généré par l’agent Minecraft Bedrock local",
+    "name": "Mission Aventure Fantasy - Behavior Pack",
+    "uuid": "84b3e3f8-3ee8-4d6a-b0d4-3ae4ec5d0cb2",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      20,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "Module behavior pack",
+      "type": "data",
+      "uuid": "ade62590-b0e0-471a-82f7-23448b739a2f",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}

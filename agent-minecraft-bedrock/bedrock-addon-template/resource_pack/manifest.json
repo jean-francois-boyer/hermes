@@ -1,0 +1,18 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "Resource pack de base pour un monde Bedrock compatible Switch via Realm",
+    "name": "Agent Minecraft Bedrock - Resource Pack",
+    "uuid": "33333333-3333-4333-8333-333333333333",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 20, 0]
+  },
+  "modules": [
+    {
+      "description": "Module resource pack",
+      "type": "resources",
+      "uuid": "44444444-4444-4444-8444-444444444444",
+      "version": [1, 0, 0]
+    }
+  ]
+}

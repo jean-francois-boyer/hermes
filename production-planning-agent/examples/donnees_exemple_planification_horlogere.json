@@ -1,0 +1,365 @@
+{
+  "scenario": "Données d'exemple — planification manufacture horlogère de luxe",
+  "horizon": "Semaine 2026-W27",
+  "objectif": "Planifier les OF lançables et identifier les OF bloqués par composants manquants",
+  "regle_metier": "Une montre ne peut pas être finalisée si un composant obligatoire manque ou n'est pas libéré qualité.",
+  "of": [
+    {
+      "of": "OF-2607-001",
+      "reference": "MH-CLASSIQUE-38-ARGENT",
+      "calibre": "CAL-MAN-100",
+      "quantite": 5,
+      "client_canal": "Boutique Genève",
+      "date_promise": "2026-07-10",
+      "priorite": "Haute",
+      "statut_attendu": "lançable complet",
+      "commentaire": "Tous composants disponibles et libérés qualité"
+    },
+    {
+      "of": "OF-2607-002",
+      "reference": "MH-SQUELETTE-40-OR",
+      "calibre": "CAL-MAN-200",
+      "quantite": 2,
+      "client_canal": "Client VIP",
+      "date_promise": "2026-07-08",
+      "priorite": "Critique",
+      "statut_attendu": "bloqué composant",
+      "commentaire": "Spiral manquant; assemblage final impossible"
+    },
+    {
+      "of": "OF-2607-003",
+      "reference": "MH-SPORT-41-NOIR",
+      "calibre": "CAL-MAN-100",
+      "quantite": 8,
+      "client_canal": "Wholesale EU",
+      "date_promise": "2026-07-18",
+      "priorite": "Moyenne",
+      "statut_attendu": "lançable partiel",
+      "commentaire": "Mouvements OK, bracelets en réception confirmée; finalisation après réception"
+    },
+    {
+      "of": "OF-2607-004",
+      "reference": "MH-HERITAGE-36-ACIER",
+      "calibre": "CAL-MAN-100",
+      "quantite": 10,
+      "client_canal": "Lancement collection",
+      "date_promise": "2026-07-25",
+      "priorite": "Haute",
+      "statut_attendu": "bloqué qualité",
+      "commentaire": "Lots de cadrans disponibles physiquement mais bloqués contrôle entrée"
+    }
+  ],
+  "stocks_composants": [
+    {
+      "reference": "MH-CLASSIQUE-38-ARGENT",
+      "composant": "lunette",
+      "stock_dispo": 12,
+      "stock_reserve": 5,
+      "stock_qualite_bloque": 0,
+      "besoin_total": 5,
+      "statut": "OK"
+    },
+    {
+      "reference": "MH-CLASSIQUE-38-ARGENT",
+      "composant": "glace",
+      "stock_dispo": 20,
+      "stock_reserve": 5,
+      "stock_qualite_bloque": 0,
+      "besoin_total": 5,
+      "statut": "OK"
+    },
+    {
+      "reference": "MH-CLASSIQUE-38-ARGENT",
+      "composant": "carrure",
+      "stock_dispo": 7,
+      "stock_reserve": 5,
+      "stock_qualite_bloque": 0,
+      "besoin_total": 5,
+      "statut": "OK"
+    },
+    {
+      "reference": "MH-CLASSIQUE-38-ARGENT",
+      "composant": "fond_de_boite",
+      "stock_dispo": 9,
+      "stock_reserve": 5,
+      "stock_qualite_bloque": 0,
+      "besoin_total": 5,
+      "statut": "OK"
+    },
+    {
+      "reference": "MH-CLASSIQUE-38-ARGENT",
+      "composant": "joints_etancheite",
+      "stock_dispo": 80,
+      "stock_reserve": 20,
+      "stock_qualite_bloque": 0,
+      "besoin_total": 20,
+      "statut": "OK"
+    },
+    {
+      "reference": "MH-CLASSIQUE-38-ARGENT",
+      "composant": "cadran",
+      "stock_dispo": 6,
+      "stock_reserve": 5,
+      "stock_qualite_bloque": 0,
+      "besoin_total": 5,
+      "statut": "OK"
+    },
+    {
+      "reference": "MH-CLASSIQUE-38-ARGENT",
+      "composant": "aiguilles",
+      "stock_dispo": 18,
+      "stock_reserve": 15,
+      "stock_qualite_bloque": 0,
+      "besoin_total": 15,
+      "statut": "OK"
+    },
+    {
+      "reference": "MH-CLASSIQUE-38-ARGENT",
+      "composant": "spiral",
+      "stock_dispo": 7,
+      "stock_reserve": 5,
+      "stock_qualite_bloque": 0,
+      "besoin_total": 5,
+      "statut": "OK"
+    },
+    {
+      "reference": "MH-SQUELETTE-40-OR",
+      "composant": "spiral",
+      "stock_dispo": 0,
+      "stock_reserve": 0,
+      "stock_qualite_bloque": 0,
+      "besoin_total": 2,
+      "statut": "MANQUANT"
+    },
+    {
+      "reference": "MH-SQUELETTE-40-OR",
+      "composant": "ponts",
+      "stock_dispo": 4,
+      "stock_reserve": 2,
+      "stock_qualite_bloque": 0,
+      "besoin_total": 2,
+      "statut": "OK"
+    },
+    {
+      "reference": "MH-SPORT-41-NOIR",
+      "composant": "bracelet",
+      "stock_dispo": 3,
+      "stock_reserve": 3,
+      "stock_qualite_bloque": 0,
+      "besoin_total": 8,
+      "statut": "RECEPTION_ATTENDUE"
+    },
+    {
+      "reference": "MH-HERITAGE-36-ACIER",
+      "composant": "cadran",
+      "stock_dispo": 0,
+      "stock_reserve": 0,
+      "stock_qualite_bloque": 10,
+      "besoin_total": 10,
+      "statut": "BLOQUE_QUALITE"
+    }
+  ],
+  "receptions_attendues": [
+    {
+      "composant": "spiral",
+      "reference": "MH-SQUELETTE-40-OR",
+      "fournisseur": "Fournisseur Spiral SA",
+      "quantite": 4,
+      "date_reception": "2026-07-09",
+      "date_confirmee": false,
+      "fiabilite": "moyenne",
+      "impact": "OF-2607-002 reste NO-GO tant que réception non confirmée et non libérée qualité"
+    },
+    {
+      "composant": "bracelet",
+      "reference": "MH-SPORT-41-NOIR",
+      "fournisseur": "Bracelets Luxe SA",
+      "quantite": 8,
+      "date_reception": "2026-07-11",
+      "date_confirmee": true,
+      "fiabilite": "haute",
+      "impact": "OF-2607-003 lançable partiel; finalisation après réception"
+    },
+    {
+      "composant": "cadran",
+      "reference": "MH-HERITAGE-36-ACIER",
+      "fournisseur": "Interne cadrans",
+      "quantite": 10,
+      "date_reception": "2026-07-07",
+      "date_confirmee": true,
+      "fiabilite": "haute",
+      "impact": "Réception physique faite mais libération qualité requise"
+    }
+  ],
+  "capacite_atelier": [
+    {
+      "poste": "Préparation kits",
+      "capacite_h_semaine": 24,
+      "temps_h_par_montre": 0.5,
+      "competence": "logistique atelier",
+      "contrainte": "prioriser OF complets"
+    },
+    {
+      "poste": "Assemblage mouvement",
+      "capacite_h_semaine": 80,
+      "temps_h_par_montre": 3.0,
+      "competence": "horloger mouvement",
+      "contrainte": "CAL-MAN-200 uniquement 1 horloger senior"
+    },
+    {
+      "poste": "Emboîtage",
+      "capacite_h_semaine": 40,
+      "temps_h_par_montre": 1.0,
+      "competence": "emboîtage",
+      "contrainte": "pas d'emboîtage si cadran/aiguilles/habillage incomplets"
+    },
+    {
+      "poste": "Réglage / tests",
+      "capacite_h_semaine": 32,
+      "temps_h_par_montre": 1.2,
+      "competence": "réglage",
+      "contrainte": "buffer reprises 20%"
+    },
+    {
+      "poste": "Contrôle qualité",
+      "capacite_h_semaine": 30,
+      "temps_h_par_montre": 0.8,
+      "competence": "QC final",
+      "contrainte": "libération obligatoire avant packaging"
+    },
+    {
+      "poste": "Packaging / expédition",
+      "capacite_h_semaine": 20,
+      "temps_h_par_montre": 0.4,
+      "competence": "logistique luxe",
+      "contrainte": "certificat + packaging complet"
+    }
+  ],
+  "planning_attendu_exemple": [
+    {
+      "date": "2026-07-06",
+      "poste": "Préparation kits",
+      "of": "OF-2607-001",
+      "decision": "GO",
+      "raison": "BOM complète"
+    },
+    {
+      "date": "2026-07-07",
+      "poste": "Assemblage mouvement",
+      "of": "OF-2607-001",
+      "decision": "GO",
+      "raison": "composants mouvement disponibles"
+    },
+    {
+      "date": "2026-07-08",
+      "poste": "Assemblage mouvement",
+      "of": "OF-2607-002",
+      "decision": "NO-GO",
+      "raison": "spiral manquant"
+    },
+    {
+      "date": "2026-07-09",
+      "poste": "Préparation kits",
+      "of": "OF-2607-003",
+      "decision": "GO partiel",
+      "raison": "bracelet manquant mais réception confirmée; ne pas finaliser avant réception"
+    },
+    {
+      "date": "2026-07-10",
+      "poste": "Contrôle qualité",
+      "of": "OF-2607-004",
+      "decision": "NO-GO",
+      "raison": "cadrans bloqués qualité"
+    }
+  ],
+  "questions_a_poser_a_l_agent": [
+    "Quels OF sont lançables cette semaine sans risque de WIP bloqué ?",
+    "Quels composants manquants bloquent la finalisation ?",
+    "Quel planning proposer si la réception des spiraux est retardée de 5 jours ?",
+    "Quels composants dois-je réserver pour les OF critiques ?"
+  ],
+  "sop": {
+    "cycle": "2026-07",
+    "demand_supply_balance": [
+      {
+        "famille": "Montres manuelles",
+        "demande_totale": 35,
+        "capacite_ctp": 28,
+        "ecart": -7,
+        "contrainte": "spiral + horloger senior"
+      }
+    ],
+    "kpi_targets": {
+      "otif_pct": 95,
+      "of_go_pct": 80,
+      "supplier_reliability_pct": 90,
+      "max_backlog_days": 10
+    },
+    "allocation_rules": [
+      "client VIP",
+      "date promise proche",
+      "OF complet",
+      "lancement collection",
+      "marge/valeur"
+    ],
+    "what_if": [
+      "retard spiral +10 jours",
+      "réception bracelet 50%",
+      "capacité atelier -20%",
+      "commande VIP urgente",
+      "lot cadrans rejeté qualité"
+    ]
+  },
+  "supplier_risks": [
+    {
+      "fournisseur": "Fournisseur Spiral SA",
+      "composant": "spiral",
+      "lead_time_jours": 20,
+      "fiabilite_livraison_pct": 70,
+      "taux_qualite_pct": 96,
+      "risque": "élevé"
+    },
+    {
+      "fournisseur": "Bracelets Luxe SA",
+      "composant": "bracelet",
+      "lead_time_jours": 12,
+      "fiabilite_livraison_pct": 92,
+      "taux_qualite_pct": 98,
+      "risque": "moyen"
+    },
+    {
+      "fournisseur": "Interne cadrans",
+      "composant": "cadran",
+      "lead_time_jours": 15,
+      "fiabilite_livraison_pct": 88,
+      "taux_qualite_pct": 93,
+      "risque": "élevé"
+    }
+  ],
+  "inventory_policy": [
+    {
+      "composant": "spiral",
+      "abc": "A",
+      "xyz": "Z",
+      "stock_securite": 6,
+      "point_commande": 10,
+      "lead_time_jours": 20
+    },
+    {
+      "composant": "bracelet",
+      "abc": "B",
+      "xyz": "Y",
+      "stock_securite": 8,
+      "point_commande": 20,
+      "lead_time_jours": 12
+    },
+    {
+      "composant": "joints_etancheite",
+      "abc": "C",
+      "xyz": "X",
+      "stock_securite": 50,
+      "point_commande": 100,
+      "lead_time_jours": 5
+    }
+  ]
+}

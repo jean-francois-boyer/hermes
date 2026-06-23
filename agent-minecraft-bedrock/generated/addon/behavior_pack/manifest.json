@@ -1,0 +1,30 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "Pack généré par l’agent Minecraft Bedrock local",
+    "name": "Le Royaume des Blocs Oubliés - Behavior Pack",
+    "uuid": "f599363b-927a-429f-aa2f-e78d06f4c6e2",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      20,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "Module behavior pack",
+      "type": "data",
+      "uuid": "14416d62-d8d4-4e2f-8478-1dc402db9b3f",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Nyon Réaliste (OSM)",
+    "description": "Reconstitution réaliste du centre de Nyon (Suisse) à partir de données OpenStreetMap (ODbL). 1 bloc = 1 mètre.",
+    "uuid": "4ab4889b-cbff-41b6-88b0-2fdb0be5244a",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      20,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "e77276a0-4a20-4482-b5b5-ae310bc31324",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}
