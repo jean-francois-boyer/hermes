@@ -6,6 +6,7 @@ Ce dossier regroupe les projets Minecraft générés dans le workspace.
 
 - `Zelda/` — monde aventure fantasy original inspiré Zelda, importable dans Bedrock.
 - `Nyon/` — monde réaliste de Nyon, Suisse, basé sur OpenStreetMap + relief réel.
+- `EuropaPark/` — reconstitution stylisée réaliste d’Europa‑Park, Rust, Allemagne, basée sur OpenStreetMap.
 
 Dans chaque projet :
 

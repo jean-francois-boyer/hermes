@@ -1,0 +1,34 @@
+{
+  "bbox": [
+    48.257,
+    7.708,
+    48.2765,
+    7.7355
+  ],
+  "width_blocks": 2039,
+  "depth_blocks": 2172,
+  "commands": 1300101,
+  "parts": 153,
+  "counts": {
+    "highway": 1423,
+    "railway": 49,
+    "park_area": 20,
+    "coaster": 203,
+    "water": 97,
+    "building": 3251,
+    "attraction": 13
+  },
+  "realism_upgrades": {
+    "classified_building_materials": true,
+    "window_facades": 17920,
+    "variable_height_coasters": 31898,
+    "coaster_supports": 1673,
+    "trees": 122,
+    "path_lamps": 220,
+    "landscape_trees": 122,
+    "flower_beds": 537,
+    "attraction_markers": 13
+  },
+  "source": "OpenStreetMap ODbL",
+  "scale": "1 block = 1 metre"
+}

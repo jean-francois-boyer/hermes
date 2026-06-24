@@ -1,0 +1,29 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Europa-Park Réaliste (OSM)",
+    "description": "Reconstruction stylisée d'Europa-Park depuis OpenStreetMap",
+    "uuid": "cb0600a3-7deb-46d0-955b-acb57d760b5b",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      20,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "4530560d-9815-470f-8d4f-eb4a213407a9",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}
