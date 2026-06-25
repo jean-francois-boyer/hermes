@@ -1,0 +1,3 @@
+# Dépendances pour drive_sync_agent.py (synchronisation Google Drive -> local)
+google-api-python-client>=2.0.0
+google-auth>=2.0.0

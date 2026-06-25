@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 from pathlib import Path
 from typing import Any
@@ -21,8 +22,28 @@ from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 from googleapiclient.http import MediaIoBaseDownload
 
-TOKEN = "/opt/data/google_token.json"
-DEFAULT_OUTPUT = Path("/opt/data/workspace/drive")
+def default_token() -> str:
+    """Token path: env override, else container path if present, else macOS home."""
+    env = os.environ.get("HERMES_GOOGLE_TOKEN")
+    if env:
+        return env
+    container = Path("/opt/data/google_token.json")
+    if container.exists():
+        return str(container)
+    return str(Path.home() / ".hermes" / "google_token.json")
+
+
+def default_output() -> Path:
+    """Output dir: env override, else container path if present, else macOS home."""
+    env = os.environ.get("HERMES_DRIVE_OUTPUT")
+    if env:
+        return Path(env)
+    container = Path("/opt/data/workspace/drive")
+    if container.parent.exists():
+        return container
+    return Path.home() / "HermesDrive"
+
+
 STATE_NAME = "_drive_sync_state.json"
 REPORT_NAME = "_drive_sync_last_report.json"
 FOLDER_MIME = "application/vnd.google-apps.folder"
@@ -58,11 +79,13 @@ def save_state(output: Path, state: dict[str, Any]) -> None:
     (output / STATE_NAME).write_text(json.dumps(state, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
-def load_service():
-    creds = Credentials.from_authorized_user_file(TOKEN)
+def load_service(token: str):
+    if not Path(token).exists():
+        raise SystemExit(f"Google token introuvable: {token} (utilise --token ou HERMES_GOOGLE_TOKEN)")
+    creds = Credentials.from_authorized_user_file(token)
     if creds.expired and creds.refresh_token:
         creds.refresh(Request())
-        Path(TOKEN).write_text(json.dumps(json.loads(creds.to_json()), indent=2), encoding="utf-8")
+        Path(token).write_text(json.dumps(json.loads(creds.to_json()), indent=2), encoding="utf-8")
     if not creds.valid:
         raise SystemExit("Google credentials are not valid")
     return build("drive", "v3", credentials=creds, cache_discovery=False)
@@ -203,7 +226,7 @@ def sync_folder(service, parent_id: str, local_dir: Path, state: dict[str, Any],
             download_file(service, item, local_dir, state, stats)
 
 
-def run_sync(output: Path) -> dict[str, Any]:
+def run_sync(output: Path, token: str) -> dict[str, Any]:
     output.mkdir(parents=True, exist_ok=True)
     state = load_state(output)
     stats: dict[str, Any] = {
@@ -221,7 +244,7 @@ def run_sync(output: Path) -> dict[str, Any]:
         "bytes_downloaded": 0,
         "changed_paths": [],
     }
-    service = load_service()
+    service = load_service(token)
     sync_folder(service, "root", output, state, stats, set())
     save_state(output, state)
     (output / REPORT_NAME).write_text(json.dumps(stats, indent=2, ensure_ascii=False), encoding="utf-8")
@@ -230,11 +253,12 @@ def run_sync(output: Path) -> dict[str, Any]:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
+    parser.add_argument("--output", type=Path, default=default_output())
+    parser.add_argument("--token", default=default_token(), help="Chemin du google_token.json")
     parser.add_argument("--verbose", action="store_true", help="Affiche un rapport même sans changement")
     args = parser.parse_args()
 
-    stats = run_sync(args.output.resolve())
+    stats = run_sync(args.output.resolve(), args.token)
     changed = stats["new"] + stats["updated"] + stats["errors"]
     if args.verbose or changed:
         print(json.dumps(stats, indent=2, ensure_ascii=False))
